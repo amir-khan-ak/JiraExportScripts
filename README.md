@@ -2,7 +2,7 @@
 # JiraExportScripts
 This repository contains scripts to extract data from Jira on-premise into Excel file in preperation to upload to ALM Octane. 
 
-# ----------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------
 # XRayExtractor.py
 This python script connects through REST API to a Jira on-premise instlalation and extract test case information to a pre-formatted Excel file in preperation to upload tests to ALM Octane. The script is intented to be used as an one time activity and not as a synchronization solution. In order to use an synchronization solution, check out the following link: https://marketplace.microfocus.com/appdelivery/content/micro-focus-connect-core
 
@@ -26,4 +26,4 @@ python XRayExtractor.py <jira_url> <jira_user> <jira_user_password> <path_to_sav
 cd C:\XRayExtractor
 C:\XRayExtractedData>python XRayExtractor.py "https://112.133.5.18:8481" "admin" "lke98dje3q+!Dkxv3" "C:\\XRayExtractedData\\XRayExtractedTests.xlsx"
 
-# ----------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------
