@@ -33,7 +33,7 @@ resp = requests.post(url + '/' + resource,
 print('Login to Jira: ' + str(resp.status_code))
 
 # Get test cases
-JSESSIONID = resp.cookies._cookies['192.168.5.128']['/']['JSESSIONID'].value
+JSESSIONID = resp.cookies._cookies['192.172.627.221']['/']['JSESSIONID'].value
 ContentType = {'Content-Type': 'application/json', 'Cookie': 'JSESSIONID=' + JSESSIONID}
 resource = 'raven/1.0/api/test?jql=project=XRAY'
 resp = requests.get(url + '/' + resource,
